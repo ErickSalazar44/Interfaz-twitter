@@ -1,0 +1,88 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+}
+.tw-followCard-avatar {
+  width: 60px;
+  border-radius: 50%;
+}
+.tw-followCard {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  padding: 1rem 2rem;
+  justify-content: space-between;
+  width: 410px;
+  transition: background-color 0.5s ease;
+}
+
+.tw-followCard:hover {
+  background-color: #424242;
+}
+.tw-followCard-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.tw-followCard-inf {
+  display: flex;
+  flex-direction: column;
+}
+.tw-followCard-inf > span {
+  opacity: 0.5;
+  letter-spacing: 1px;
+}
+.tw-followCard-btn {
+  font-family: Inter, system-ui;
+  min-height: 32px;
+  background-color: rgb(239, 243, 244);
+  color: #222;
+  letter-spacing: 1px;
+  border-radius: 1.6rem;
+  padding: 0 10px;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.5s ease, color 0.5s ease;
+  width: 100px;
+}
+.tw-followBtn-text {
+  display: block;
+}
+.tw-follow-card-StopFollow {
+  display: none;
+}
+.is-following {
+  color: #999;
+  background-color: #222;
+  border: 1px solid #999;
+  width: 130px;
+}
+.is-following:hover{
+  background-color: rgba(255, 0, 0, 0.205);
+  color: red;
+  display: block;
+}
+.is-following:hover .tw-follow-card-StopFollow {
+  display: block;
+}
+.is-following:hover .tw-followBtn-text {
+  display: none;
+}
+
